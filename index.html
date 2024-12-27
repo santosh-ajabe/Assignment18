@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive_cards</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    
+        }
+
+
+        .product_card {
+
+           height: 400px;
+            width: 250px;
+            border: 1px solid blue;
+            
+            border-radius: 10px 10px 0 0;
+            padding-bottom: 5px;
+            margin: 10px 10px;
+        }
+
+        .apple_img {
+
+            width: 100%;
+            display: block;
+            border-radius: 10px 10px 0 0;
+            
+
+        }
+        .product_title{
+
+            
+            text-align: center;
+        }
+        .product_info{
+
+            text-align: justify;
+            font-size: 15px;
+            padding: 0 10px;
+        }
+
+        .order_button{
+
+           display: block;
+           margin: 0 auto;
+           border: none;
+           border-radius: 50px;
+           padding: 5px 15px;
+           background-color: #b3ffb3;
+           font-size: 20px;
+        }
+        .navbar{
+
+            background-color: #800000;
+            height: 60px;
+            padding: 10px;
+            position: sticky;
+            color: black;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu{
+
+            margin-left: 30%;
+        }
+        .search{
+            margin: auto;
+            margin-right: 7%;
+            
+        }
+        .brand_img{
+            height: 60px;
+            text-align: center;
+        }
+        .brand{
+         
+            display:flex;
+
+        }
+        .menu_item{
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+
+        .menu_item:hover{
+
+            border-color: 1px black;
+            text-decoration: underline;
+            box-shadow: rgb(from color r g b);
+        }
+
+        .menu_icon{
+
+            height: 60px;
+            
+            display: none;
+            
+        }
+        .searchbar{
+            border-radius: 30px;
+            text-align: center;
+            height: 30px;
+        }
+        h1{
+                text-align: center;
+
+            }
+            .Apple{
+             
+                width: 100%;
+                height: 200px;
+            display: block;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+            }
+
+        @media (max-width:600px) {
+        .product_title{
+
+            text-align: left;
+            padding-left: 10px;
+        
+        }
+
+        .product_info{
+
+            text-align: left;
+            padding-left: 10px;
+        }
+        .menu_icon{
+            display: block;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        .menu_item{
+
+            display: none;
+        }
+        .searchbar{
+            display: none;
+        }
+        }
+
+        
+        @media (min-width:601px) and (max-width:800px) {
+
+            .container{
+
+                background-color: #b3ffb3;
+            }
+        }
+
+        @media(min-width:801px) and (max-width:1200px)  {
+           
+            .search{
+                margin: left;
+
+            }
+            .searchbar{
+                margin: left;
+            }
+            
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+    <div class="brand" >
+        <img src="apple.png" alt="apple" class="brand_img">
+        <h2>Apples</h2>
+    </div>
+    
+    <div class="menu">
+        <a href="#" class="menu_item"> Home</a>
+        <a href="#" class="menu_item"> About us</a>
+        <a href="#" class="menu_item"> Contact us</a>
+    </div>
+    <div class="search">
+        <input type="search" placeholder="search" class="searchbar">
+    </div>
+    <img src="menu-bar.png" class="menu_icon" alt="menu">
+    </div>
+    <h1>Kashmiri Apples</h1>
+    <div class="container">
+        <div class="product_card">
+            <img src="apple.img.jpg" alt="kashmir apple" class="apple_img">
+            <h2 class="product_title">Kashmir Apples</h2>
+            <p class="product_info">
+                Kashmiri apples are a variety of apples that can vary in size, shape, and flavor, but are generally
+                known for their smooth skin, sweet taste, and crisp texture:
+            </p>
+
+            <button class="order_button">Shop Now</button>
+        </div>
+
+        <div class="product_card">
+            <img src="apple.img.jpg" alt="kashmir apple" class="apple_img">
+            <h2 class="product_title">Kashmir Apples</h2>
+            <p class="product_info">
+                Kashmiri apples are a variety of apples that can vary in size, shape, and flavor, but are generally
+                known for their smooth skin, sweet taste, and crisp texture:
+            </p>
+
+            <button class="order_button">Shop Now</button>
+        </div>
+
+        <div class="product_card">
+            <img src="apple.img.jpg" alt="kashmir apple" class="apple_img" class="Apple" loading="lazy">
+            <h2 class="product_title">Kashmir Apples</h2>
+            <p class="product_info">
+                Kashmiri apples are a variety of apples that can vary in size, shape, and flavor, but are generally
+                known for their smooth skin, sweet taste, and crisp texture:
+            </p>
+
+            <button class="order_button">Shop Now</button>
+        </div>
+
+        <div class="product_card">
+            <img src="apple.img.jpg" alt="kashmir apple" class="apple_img">
+            <h2 class="product_title">Kashmir Apples</h2>
+            <p class="product_info">
+                Kashmiri apples are a variety of apples that can vary in size, shape, and flavor, but are generally
+                known for their smooth skin, sweet taste, and crisp texture:
+            </p>
+
+            <button class="order_button">Shop Now</button>
+        </div>
+
+        <div class="product_card">
+            <img src="apple.img.jpg" alt="kashmir apple" class="apple_img">
+            <h2 class="product_title">Kashmir Apples</h2>
+            <p class="product_info">
+                Kashmiri apples are a variety of apples that can vary in size, shape, and flavor, but are generally
+                known for their smooth skin, sweet taste, and crisp texture:
+            </p>
+
+            <button class="order_button">Shop Now</button>
+        </div>
+
+        <div class="product_card">
+            <img src="apple.img.jpg" alt="kashmir apple" class="apple_img">
+            <h2 class="product_title">Kashmir Apples</h2>
+            <p class="product_info">
+                Kashmiri apples are a variety of apples that can vary in size, shape, and flavor, but are generally
+                known for their smooth skin, sweet taste, and crisp texture:
+            </p>
+
+            <button class="order_button">Shop Now</button>
+        </div>
+
+
+        
+
+    </div>
+
+</body>
+
+</html>
